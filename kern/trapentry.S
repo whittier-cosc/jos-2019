@@ -44,12 +44,12 @@
 .text
 
 /*
- * Lab 3: Your code here for generating entry points for the different traps.
+ * LAB 3: Your code here for generating entry points for the different traps.
  */
 
 
 
 /*
- * Lab 3: Your code here for _alltraps
+ * LAB 3: Your code here for _alltraps
  */
 

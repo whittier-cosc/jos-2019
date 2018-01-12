@@ -276,9 +276,15 @@ prep-%:
 	$(V)$(MAKE) "INIT_CFLAGS=${INIT_CFLAGS} -DTEST=`case $* in *_*) echo $*;; *) echo user_$*;; esac`" $(IMAGES)
 
 run-%-nox-gdb: prep-% pre-qemu
+	@echo "***"
+	@echo "*** Now run 'make gdb'." 1>&2
+	@echo "***"
 	$(QEMU) -nographic $(QEMUOPTS) -S
 
 run-%-gdb: prep-% pre-qemu
+	@echo "***"
+	@echo "*** Now run 'make gdb'." 1>&2
+	@echo "***"
 	$(QEMU) $(QEMUOPTS) -S
 
 run-%-nox: prep-% pre-qemu
@@ -286,7 +292,6 @@ run-%-nox: prep-% pre-qemu
 
 run-%: prep-% pre-qemu
 	$(QEMU) $(QEMUOPTS)
->>>>>>> lab3
 
 # This magic automatically generates makefile dependencies
 # for header files included from C source files we compile,
