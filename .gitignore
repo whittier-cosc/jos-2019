@@ -5,6 +5,7 @@
 /jos.out.*
 /jos.cmd
 /.gdbinit
+/.gdb_history
 /wget.log
 /qemu.pcap
 /qemu.pcap.*
