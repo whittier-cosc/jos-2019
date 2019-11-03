@@ -115,7 +115,7 @@ mp_main(void)
 	// to start running processes on this CPU.  But make sure that
 	// only one CPU can enter the scheduler at a time!
 	//
-	// Your code here:
+	// LAB 4: Your code here:
 
 	// Remove this after you finish Exercise 6
 	for (;;);
